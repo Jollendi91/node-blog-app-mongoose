@@ -75,7 +75,7 @@ router.put('/:id', (req, res) => {
     });
 
     Posts
-        .findByIdAndUpdate(req.params.id, { $set: toUpdate })
+        .findByIdAndUpdate(req.params.id, { $set: toUpdate }, { new: true })
         .then(post => res.status(200).send(post.serialize()))
         .catch(err => {
             console.error(err);

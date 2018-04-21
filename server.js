@@ -1,7 +1,7 @@
 'use strict';
 
 const express = require('express');
-const bodyParser = require('body-parser');
+const morgan = require('morgan');
 const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
@@ -12,7 +12,7 @@ const {postsRouter} = require('./postsRoutes');
 
 
 const app = express();
-app.use(bodyParser.json());
+app.use(express.json());
 
 app.use('/posts', postsRouter);
 
