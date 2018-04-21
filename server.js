@@ -13,6 +13,7 @@ const {postsRouter} = require('./postsRoutes');
 
 const app = express();
 app.use(express.json());
+app.use(morgan('common'));
 
 app.use('/posts', postsRouter);
 
