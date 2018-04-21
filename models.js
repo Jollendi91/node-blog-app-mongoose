@@ -5,7 +5,10 @@ const mongoose = require('mongoose');
 const postSchema = mongoose.Schema({
     title: {type: String, required: true},
     content: {type: String, required: true},
-    author: {type: Object, required: true},
+    author: {
+        firstName: {type: String, required: true},
+        lastName: {type: String, required: true}
+    },
     created: {type: Date, default: Date.now()}
 });
 

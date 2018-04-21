@@ -30,4 +30,8 @@ router.get('/:id', (req, res) => {
         });
 });
 
+router.post('/', (req, res) => {
+    const requiredFields = ['title', 'author: {firstName, lastName}', 'content']
+});
+
 module.exports = {postsRouter: router};
