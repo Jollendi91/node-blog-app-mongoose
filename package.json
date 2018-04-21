@@ -1,0 +1,19 @@
+{
+  "name": "blog-app-with-mongoose",
+  "version": "1.0.0",
+  "description": "Challenge - Add Mongoose to Blog App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jollendi91/node-blog-app-mongoose.git"
+  },
+  "author": "Joshua Ollendick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jollendi91/node-blog-app-mongoose/issues"
+  },
+  "homepage": "https://github.com/Jollendi91/node-blog-app-mongoose#readme"
+}
