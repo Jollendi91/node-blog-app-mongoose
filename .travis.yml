@@ -1,4 +1,11 @@
 language: node_js
 node_js: node
 services:
-  - mongodb
+- mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: drxoniCMv/9ZcDeSd9x3zJGkJYFOpgQfk0mg+uFlx6xtId2h3YPh3PHqcRdKOrc7AXRDAJn9Axh6AA/aIMBn7QkfPjg24n9CuHgiZCfdPOEU0IHkuZRR7LNHT6XruEJdp0AtyHQvn73qoSL9aSImR4VFyJ/KY7xuk5TTraWIC9xlaiWEF1n2rieK9ht7rB/4DepTDdQGhdPmMQJKqzbY6NFrACTid8nZdBr4yJ5VWB049D5UwMrFOaA466Obzq8ybfrKUtsPmus6BK++JHafZuf96CB5Gm644vrR9SVv4PT+tD4lZ2wlbDzTteFS4YTOZYt18i1PmfR9ofryC+Wc6yyBF6M+ALTy/Cskku4LzC47Y5rxGsdOqcrnq+w2jVFkrtWGmjr/iU4ayT+lW0wZngS2sRxAWRAlRiJyKz0/e29qDPoB9PmdHZ5CyxV5FxVw1jnmGQeocoN0SmkZtFQucx4wM5L8PiJdravBrNUl3AccAb8uu2p4RPpR6sxE7xLBr0KKH5E29OECq7q08LV1WpU9K4OImHj+rSmzVtIyyUs8Hq23k9BY0vOAyL4IWHK9zEw5+E0PDUFyHvo+7X4sFKDAOycUEnp3a7BM0twOWQ5M2q0bD+vGGIsYNTP7ocuP+GkGMHBlwJY+QkVi050W0K2UP/OdTh1/90prF9KwtBs=
+  app: fast-sierra-96921
+  on:
+    repo: Jollendi91/node-blog-app-mongoose
