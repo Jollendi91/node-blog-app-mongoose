@@ -76,7 +76,7 @@ router.put('/:id', (req, res) => {
 
     Posts
         .findByIdAndUpdate(req.params.id, { $set: toUpdate }, { new: true })
-        .then(post => res.status(200).send(post.serialize()))
+        .then(post => res.status(204).end())
         .catch(err => {
             console.error(err);
             res.status(500).json({message: 'Internal server error'});

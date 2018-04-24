@@ -4,7 +4,8 @@
   "description": "Challenge - Add Mongoose to Blog App",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "mocha --exit"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,11 @@
     "express": "^4.16.3",
     "mongoose": "^5.0.15",
     "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "faker": "^4.1.0",
+    "mocha": "^5.1.1"
   }
 }
